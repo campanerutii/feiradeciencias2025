@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papua Nova Guiné</title>
+    <link rel="icon" href="logo-mdc.png">
+</head>
+<style>
+    body {
+    background-image: url("papua.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+        
+.titulo {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.103); /* deixei mais visível */
+    backdrop-filter: blur(10px); /* aplica blur */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.info-h1 {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    color: red;
+    margin: 0;
+}
+
+.informacoes {
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.texto {
+    max-width: 800px;
+    margin: 10px auto 0 auto;
+    background: rgba(255, 255, 255, 0.103);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+strong {
+    color: rgb(205, 4, 4)
+}
+
+.display-video {
+    margin-top: 17px;
+    display: flex;
+}
+
+.video {
+    width: 70%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.14);
+    margin-left: 76px;
+}
+
+.img-religioso {
+    margin-left: 136px;
+    border-radius: 20px;
+    width: 70%;
+}
+
+.img-comida {
+    margin-left: 83px;
+    border-radius: 20px;
+    gap: 10px;
+    display: flex;
+}
+
+.item-comida {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-comida img {
+    width: 74%;
+    border-radius: 20px;
+}
+
+.item-comida p {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+ .player {
+    position: relative;
+    width: 500px;
+    height: 180px;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    margin: 15px;
+    margin-left: 76px;
+  }
+
+  .player::before {
+    content: '';
+    background-image: url('album.png'); /* imagem da capa */
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    color: #fff;
+    gap: 20px;
+    margin: 15px;
+  }
+
+  .cover {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #ffffff00;
+    flex-shrink: 0;
+
+  }
+
+.song-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.song-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.artist {
+    margin: 0;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    opacity: 0.9;
+}
+
+audio {
+    width: 100%;
+    margin-top: 0px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+ .return{
+                 display: inline-block; 
+            background-color: #2c3e99; 
+            color: white; 
+            padding: 12px 25px; 
+            border-radius: 25px; 
+            font-family:'Montserrat', sans-serif;; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            border: none; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease, transform 0.2s ease; 
+            text-align: center; 
+            font-size: 0.9rem; 
+            text-decoration: none;
+        }
+        
+</style>
+<body>  
+
+<div class="checkout-form">
+    <div class="form-group">
+
+        <!-- Título da página -->
+        <div class="titulo">
+            <div class="info-h1">
+                Características sobre Papua Nova Guiné
+            </div>
+        </div>
+
+        <!-- Texto principal -->
+        <div class="texto">
+            <div class="informacoes">
+                <p>
+                    Papua Nova Guiné (oficialmente estado independente da Papua Nova Guiné)
+                    é um país da Oceania que ocupa mais da metade da ilha Nova Guiné.
+                    A área total da Papua-Nova Guiné é de aproximadamente <b>462.840 km².</b>
+                    Sua capital é a cidade de <b>Porto Moresby</b>
+                </p>
+
+                <h2>Características econômicas</h2>
+                <p><strong>Moeda:</strong> A moeda oficial de Papua Nova Guiné é o <b>Kina</b> (PGK). Seu nome é originado de  
+                <span style="margin-left: 75px;">uma concha típica utilizada como moeda em transações antes da colonização.</span>
+                <span style="margin-left: 75px">Um Kina vale <b>1,23 reais</b></span>
+                <p><strong>Valor do PIB:</strong> O valor do PIB de Papua Nova Guiné em dólares é de <b>$32,5 bilhões</b>.</p>
+
+                <h2>Características culturais</h2>
+                <p><strong>Dança:</strong> O país é famoso por suas danças tradicionais, conhecidas como <b>"sing-sing"</b>
+                <span style="margin-left: 69px;">que reúnem diversos grupos étnicos em festividades.</span><br>
+                <span style="margin-left: 69px;">Os participantes usam roupas coloridas, penas, pinturas corporais e máscaras</span>
+                <span style="margin-left: 69px;">durante essas apresentações. As danças estão intimamente ligadas à </span>
+                <span style="margin-left: 69px;"><b>espiritualidade, à natureza e à vida comunitária</b>, ocorrendo em <b>cerimônias </span>
+                <span style="margin-left: 69px;">de colheita, rituais religiosos, casamentos e festivais culturais.</b></span><br>
+                <span style="margin-left: 69px;">Abaixo temos um vídeo mostrando como é a dança sing-sing</span>
+
+                <!-- Vídeo -->
+                <div class="display-video">
+                    <!-- <video class="video" controls>
+                        <source src="singsing.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video> -->
+                    <iframe width="560" height="315" style="border-radius:10px; margin:0 auto" src="https://www.youtube.com/embed/n-vHoA_7Esc?si=r9U0FxiJO1xjvUBG&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <p><strong>Música:</strong>A música tradicional é caracterizada pelo uso de instrumentos como <b>tambores
+                <span style="margin-left: 76px;">de madeira (kundu), flautas de bambu e chocalhos confeccionados</span>
+                <span style="margin-left: 76px;">com sementes.</b> O ritmo está intimamente associado às danças <b>sing-sing</b>, </span>
+                <span style="margin-left: 76px;">caracterizadas por <b>batidas repetitivas</b> e <b>cantos coletivos</b> que fortalecem</span>
+                <span style="margin-left: 76px;">a identidade tribal.</span><br>
+                <span style="margin-left: 76px;">Abaixo temos um exemplo de uma música tradicional do país.</span>
+                </p>
+                <div class="player">
+                    <div class="content">
+                        <img src="album.png" class="cover">
+                            <div class="song-info">Traditional Music of Papua New Guiné</h3>
+                                <p class="artist">Unknow</p>
+                                <audio controls src="sing-song.mp3"></audio>
+                            </div>
+                    </div>
+                </div>
+
+                <p><strong>Religiosidade:</strong> A influência de missionários europeus durante o período colonial resultou 
+                <span style="margin-left: 136px;">em uma população majoritariamente <b>cristã.</b> Igreja <b>Católica, Luterana, 
+                <span style="margin-left: 136px;">Anglicana e Evangélicas</b> No entanto, muitas comunidades ainda mantêm</span>
+                <span style="margin-left: 136px;">suas crenças animistas tradicionais, que incluem <b>espíritos da natureza,</span>
+                <span style="margin-left: 136px;">rituais de cura e práticas relacionadas aos ancestrais.</b></span></p>
+                <img src="igreja.png" class="img-religioso">
+
+                <p><strong>Comida:</strong> A gastronomia do país é descomplicada e fundamentada em ingredientes locais,
+                <span style="margin-left: 83px;">como <b>batata-doce, inhame, taro, mandioca, banana e coco.</b> As carnes mais</span>
+                <span style="margin-left: 83px;">consumidas são <b>frango, porco e peixe.</b></span><br>
+                <span style="margin-left: 83px;">O <b>Mumu</b>, feito em um forno subterrâneo, é o prato mais típico: carnes, legumes </span>
+                <span style="margin-left: 83px;">e verduras são cozidos lentamente em pedras quentes, envoltos em folhas de</span>
+                <span style="margin-left: 83px;">bananeira. Esse prato é comum em comemorações e festividades.</span>
+                <span style="margin-left: 83px;">Também é muito comum o consumo de frutas tropicais (como: <b>Acacaxi, manga,</span>
+                <span style="margin-left: 83px;">mamão, coco</b>)</span><br>
+                <span style="margin-left: 83px;">Abaixo temos uma foto do prato <b>Mumu</b></span><br>
+                <div class="img-comida">
+                    <div class="item-comida">
+                        <img src="mumu.png" alt="mumu">
+                        <p>Mumu</p>
+                    </div>
+                    <div class="item-comida">
+                    </div>
+                </div>
+                <h2>Problemas enfrentados</h2>
+                <p>
+                    <b>Infraestrutura:</b> diversas regiões rurais ainda necessitam de vias, fornecimento de energia e conectividade à internet.<br>
+                    <b>Saúde:</b> problemas de acesso a hospitais e profissionais da medicina, sobretudo em áreas distantes.<br>
+                    <b>Educação:</b> elevados níveis de abandono escolar e escassez de recursos para docentes e instituições de ensino.<br>
+                    <b>Segurança:</b> ocorrência de violência tribal em certas áreas e dificuldades no enfrentamento da criminalidade urbana.<br>
+                    <b>Economia:</b> embora seja abundante em recursos naturais como petróleo, gás e ouro, ainda enfrenta uma grande dependência das exportações e desigualdade social.<br>
+                </p>
+                <a href="C:\Users\PedroCampanerutideLi\OneDrive - ASSOCIAÇÃO EDUCACIONAL PENTAGONO\2025\Feira de Ciências - 2025\REALMENTE FEIRA DE CIENCIAS(1)\Site Oficial\Página Principal\site-da-loja\loja-de-pais.html"><h2 class="return">Voltar ao catálogo</h2></a>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

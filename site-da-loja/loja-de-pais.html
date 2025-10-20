@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Conectado - A Visão digital dos continentes</title>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+    <link rel="stylesheet" href="style-loja.css" />
+    <link rel="icon" href="logo-mdc.png">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mundo Conectado</h1>
+            <div class="continents">
+            <button class="continent-btn active" data-continent="all">Todos</button>
+            <button class="continent-btn" data-continent="América">América</button>
+            <button class="continent-btn" data-continent="Europa">Europa</button>
+            <button class="continent-btn" data-continent="Ásia">Ásia</button>
+            <button class="continent-btn" data-continent="África">África</button>
+            <button class="continent-btn" data-continent="Oceania">Oceania</button>
+        </div>
+        </header>
+        
+        <!-- Catálogo de Países -->
+        <div id="catalog" class="page active">
+            <a href="C:\Users\PedroCampanerutideLi\OneDrive - ASSOCIAÇÃO EDUCACIONAL PENTAGONO\2025\Feira de Ciências - 2025\REALMENTE FEIRA DE CIENCIAS(1)\Site Oficial\Página Principal\index.html"><h2 class="return">Voltar à página principal</h2></a>
+            <h2 class="continent-title">Catálogo de Países</h2>
+            <p>Selecione o país que deseja adquirir</p>
+            
+            <div class="countries-grid">
+            </div>
+        </div>
+        
+        <!-- Finalização de Compra -->
+
+        <div id="checkout" class="page">
+            <div class="checkout-form">
+                <div class="form-group">
+                    <label for="name">Primeiro nome</label>
+                    <input type="text" id="name" placeholder="Digite seu nome" autocomplete="off">
+                </div>
+                
+                <div class="form-group">
+                    <label for="snome">Sobrenome</label>
+                    <input type="snome" id="snome" placeholder="Digite seu sobrenome" autocomplete="off">
+                </div>
+                
+                <button class="checkout-btn" onclick="completePurchase()">Confirmar Compra</button>
+                <p class="aperte"> Aperte a tecla <b>F5</b> para voltar ao catálogo</p>
+
+            </div>
+        </div>
+
+        
+        <!-- Confirmação de Compra -->
+        <div id="confirmation" class="page">
+            <div class="confirmation">
+                <h2>Parabéns pela sua aquisição!</h2>
+                <p>Agora o país <span id="purchased-country" class="country-name">Brasil</span> é seu!</p>
+                
+                <div class="qrcode-container">
+                    <div id="qrcode"></div>
+                    <p>Escaneie este código para ver sua compra</p>
+                </div>
+                
+                <div class="gift-message">
+                    <p>Muito obrigado pela sua atenção!</p>
+                    <p>Nosso grupo <b>Mundo Conectado</b> deseja á você ujma ótima noite!</p>
+                </div>
+                
+                <button class="nav-btn" onclick="showPage('catalog')">Voltar ao Catálogo</button>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Feira de Ciências &copy; 2025 - Todos os direitos reservados</p>
+            <p>Colégio Pentágono - Turma 1º ano Técnico em Informática</p>
+        </footer>
+    </div>
+
+    <script src="js-loja.js"></script>
+</body>
+</html>

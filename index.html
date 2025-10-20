@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Conectado: A Visão Digital dos Continentes</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="icon" href="logo-mdc.png">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <div class="logo"><a href="#">Mundo Conectado</a></div>
+            <button id="mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-nav" id="main-navigation">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Site</a></li>
+                    <li><a href="#gallery">Paisagens</a></li>
+                    <li><a href="#testimonials">Natureza</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="cta-button nav-button">Créditos</a>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Mundo Conectado</h1>
+            <p>A visão digital dos Continentes.</p>
+            <a href="site-da-loja/loja-de-pais.html" class="cta-button hero-button">Compras</a>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <div class="container fade-in-hidden">
+            <h2>Bem-vindo!</h2>
+            <p>Nosso grupo desenvolveu esse website para mostrarmos ao público como é interresantes aprender sobre os continentes e que podemos aprender de forma lúdica e divertida.</p>
+        </div>
+    </section>
+
+    <section id="services" class="content-section alt-bg">
+        <div class="container">
+            <h2>O que temos em nosso website?</h2>
+            <div class="services-container">
+                <div class="service-item fade-in-hidden">
+                    <img src="images/pczinho.png" alt="Icone de Computador" class="service-icon">
+                    <h3>Nossa Página Inicial</h3>
+                    <p>Para você saber tudo o que <br> o nosso site irá proporcionar para você</p>
+                </div>
+                <div class="service-item fade-in-hidden">
+                    <img src="images/cute-flag.png" alt="Icone de bandeira" class="service-icon">
+                    <h3>Uma página interativa</h3>
+                    <p>Para você aprender curiosidades <br> e características sobre <br> diversos países.</p>
+                </div>
+                <div class="service-item fade-in-hidden">
+                    <img src="images/card.png" alt="Icone de cartão" class="service-icon">
+                    <h3>Página de compras</h3>
+                    <p>Para você simular a compra de <br> um país! E com isso ganhar uma lembrancinha.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="content-section">
+        <div class="container">
+            <h2>Paisagens</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in-hidden"><img src="images/alto-purus.jpg" alt="Elegant salon reception area">Peru</div>
+
+                <div class="gallery-item fade-in-hidden"><img src="images/euas.jpg" alt="Comfortable pedicure station">Estados Unidos</div>
+                <div class="gallery-item fade-in-hidden"><img src="images/montanha-e-planta.jpg" alt="Close-up of a flawless manicure">
+                África do Sul</div>
+                <div class="gallery-item fade-in-hidden"><img src="images/mato-africa.jpg" alt="Salon decor detail"> África do Sul</div>
+                <div class="gallery-item fade-in-hidden"><img src="images/canions.jpg" alt="Client relaxing during treatment">Estados Unidos</div>
+                <div class="gallery-item fade-in-hidden"><img src="images/br-foto.jpg" alt="Premium beauty products"> Brasil </div>
+                <div class="gallery-item fade-in-hidden"><img src="images/laranjao.jpg" alt="Premium beauty products">Myanmar</div>
+                <div class="gallery-item fade-in-hidden"><img src="images/parises.jpg" alt="Premium beauty products"> França </div>
+                <div class="gallery-item fade-in-hidden"><img src="images/antartica.jpg" alt="Premium beauty products"> Antartida </div>
+                <div class="gallery-item fade-in-hidden"><img src="images/suitzerland.jpg" alt="Premium beauty products"> Suiça </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="content-section alt-bg">
+        <div class="container">
+            <h2>Sobre a Natureza</h2>
+            <div class="swiper-container testimonial-slider fade-in-hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <blockquote class="testimonial-quote">“Na natureza nada se cria, nada se perde, tudo se transforma.”</blockquote>
+                        <p class="customer-name">- Antoine Lavosier</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <blockquote class="testimonial-quote">“A natureza é a grande reveladora de segredos.”</blockquote>
+                        <p class="customer-name">- Albert Ainstein</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <blockquote class="testimonial-quote">“A beleza da natureza é um presente que cultiva a apreciação e gratidão.”</blockquote>
+                        <p class="customer-name">- Louie Schwartzberg</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <blockquote class="testimonial-quote">“A natureza é a verdadeira obra de arte.”</blockquote>
+                        <p class="customer-name">- Vincent Van Gogh</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section">
+        <div class="container fade-in-hidden">
+            <h2>Créditos</h2>
+            <div class="contact-details">
+                <p>Com o apoio dos integrantes do site "Mundo Conectado" — nosso agradecimento especial e os devidos créditos aos nossos <b>Colaboradores</b>, que criaram fizeram tudo ser possível, e aos nossos <b>Contribuintes</b>, que também foram fontes essenciais de contribuição ao nosso lado na realização do trabalho.</p>
+                <p><strong>Integrantes:</strong><br>
+
+                   Arthur Pivêta, 
+                   Beatriz Gandolfo, 
+                   Heloiza Aguizar, 
+                   Henrique Ramos, 
+                   Pedro Campaneruti.
+          
+                </p>
+            </div>
+            <!-- <a href="#" class="cta-button contact-button" target="_blank" rel="noopener noreferrer">Book Online Now</a> -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Mundo Conectados</h4>
+                    <p>Criado por mãos que sonham e teclam.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Sobre nós</h4>
+                    <ul>
+                        <li><b>Colaboradores</b>: Heloiza Aguiar Santos, Pedro Campaneruti.</li>
+                        <li><b>Contribuintes</b>: Arthur Piveta, Beatriz Gandolfo, Daniel isipatto, Diego Marques, Henrique Ramos.</li>
+                    </ul>
+                </div>
+               <marquee scrollamount="14"><h3>COMPRE UM SITE E GANHE UMA LEMBRANCINHA!</h3></marquee>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Mundo Conectado. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lightbox-modal" class="lightbox">
+        <span class="lightbox-close" aria-label="Close image view">&times;</span>
+        <img class="lightbox-content" id="lightbox-image" src="" alt="Large gallery image view">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="site.js"></script>
+
+</body>
+</html>
